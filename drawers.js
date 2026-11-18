@@ -251,7 +251,7 @@ window.CABINET_DRAWERS = [
   },
   {
     "id": "drawer-8",
-    "name": "Mystery",
+    "name": "Lucky",
     "asset": "assets/drawers/mystery-shuffle.png",
     "overlay": [
       1259,
