@@ -266,7 +266,7 @@ window.CABINET_DRAWERS = [
       286
     ],
     "secret": true,
-    "url": "https://youtube.com/playlist?list=PLlIVMKYzeqe0IgzHr4Y1LqkXS-mJUvQUr&si=lU0pmkQKevK-E_jE",
+    "url": "https://open.spotify.com/playlist/3AMrhZAHUnFFm3B5AGB41N?si=7wCMFonzQZ-NkacZcZtukQ&utm_source=copy-link&pi=HDqepMBURpCca",
     "openLabel": [
       1484,
       1078,
