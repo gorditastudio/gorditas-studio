@@ -211,7 +211,8 @@ html.menu-open{overflow:hidden}#navigation{position:fixed;inset:0;width:100%;max
   #mobile-menu-toggle {
     position: absolute;
     left: 30%;
-    top: 28.33%;\n    transform: translateY(-50%);
+    top: 28.33%;
+    transform: translateY(-50%);
     width: 41%;
     min-height: 44px;
     height: 5.2%;

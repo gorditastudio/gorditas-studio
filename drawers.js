@@ -96,7 +96,7 @@ window.CABINET_DRAWERS = [
   {
     "id": "drawer-3",
     "name": "Jewelry",
-    "asset": "assets/drawers/Jewelry_open.png",
+    "asset": "assets/drawers/jewelry-ring.png",
     "overlay": [
       236,
       521,
@@ -252,7 +252,7 @@ window.CABINET_DRAWERS = [
   {
     "id": "drawer-8",
     "name": "Mystery",
-    "asset": "assets/drawers/SecretDraw_open.png",
+    "asset": "assets/drawers/mystery-shuffle.png",
     "overlay": [
       1259,
       838,
