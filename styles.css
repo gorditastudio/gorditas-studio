@@ -3,7 +3,7 @@
 
 /* Live type on the blank photographic label inserts. */
 .scene{container-type:inline-size}.drawer-label{position:absolute;display:flex;align-items:center;justify-content:center;white-space:nowrap;pointer-events:none;color:#090909;font-family:Inter,Arial,sans-serif;font-weight:800;font-size:.86806cqw;line-height:1;text-transform:uppercase;z-index:1}.open-label{opacity:0;z-index:2;transition:opacity 150ms ease}.drawer-layer.active .closed-label{visibility:hidden}.drawer-layer.active .open-label{opacity:1}.hotspot{z-index:3}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.footer{container-type:inline-size;color:#000}.footer-brand{position:absolute;left:5.85%;top:57.4%}.footer-brand h2{font:800 2.08333cqw/1.15 Inter,Arial,sans-serif;margin:0 0 .6cqw;letter-spacing:-.04em}.footer .email{position:static;display:inline-block;width:auto;height:auto;color:#000;font:400 .86806cqw/1.4 'Courier Prime',monospace;text-decoration:none}.footer-nav{position:absolute;left:50%;right:10%;top:25%;display:grid;grid-template-columns:1fr 1fr;column-gap:5cqw}.footer-nav>div{display:grid;row-gap:1.48cqw}.footer-nav a{width:max-content;max-width:100%;color:#000;font:400 1.38889cqw/1.2 'Courier Prime',monospace;text-decoration:underline;text-underline-offset:.1em}.footer-nav a:hover,.footer-nav a:focus-visible{font-weight:700}.footer a:focus-visible{outline:2px solid #b64d91;outline-offset:4px}.footer .email:hover{font-weight:700}dialog,dialog button:not(.dismiss){font-family:'Courier Prime',monospace}dialog h1{font-family:Inter,Arial,sans-serif;font-weight:800}
-@media(max-width:700px){.footer{background:#f5f7f7 url('assets/footer.png') top left/100% auto no-repeat;padding:130px 24px 35px}.footer>img{display:none}.footer-brand{position:static}.footer-brand h2{font-size:26px;margin-bottom:10px}.footer .email{font-size:15px;line-height:1.5}.footer-nav{position:static;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:25px}.footer-nav>div{gap:8px}.footer-nav a{font-size:17px;min-height:32px;display:flex;align-items:center;line-height:1.4}#menu-toggle{min-width:32px;min-height:32px;left:auto;right:1.5%}}
+@media(max-width:700px){.footer{background:#f5f7f7;padding:24px 24px 35px}.footer>img{display:none}.footer-brand{position:static}.footer-brand h2{font-size:26px;margin-bottom:10px}.footer .email{font-size:15px;line-height:1.5}.footer-nav{position:static;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:25px}.footer-nav>div{gap:8px}.footer-nav a{font-size:17px;min-height:32px;display:flex;align-items:center;line-height:1.4}#menu-toggle{min-width:32px;min-height:32px;left:auto;right:1.5%}}
 @media(prefers-reduced-motion:reduce){.open-label{transition:none}}
 
 .secret-label{font-size:.86806cqw}
@@ -211,7 +211,7 @@ html.menu-open{overflow:hidden}#navigation{position:fixed;inset:0;width:100%;max
   #mobile-menu-toggle {
     position: absolute;
     left: 30%;
-    top: 32.4%;
+    top: 28.33%;\n    transform: translateY(-50%);
     width: 41%;
     min-height: 44px;
     height: 5.2%;
@@ -221,17 +221,21 @@ html.menu-open{overflow:hidden}#navigation{position:fixed;inset:0;width:100%;max
     color: #080604;
     font: 800 clamp(13px, 3.8cqw, 26px)/1 Inter, sans-serif;
   }
-  .feeling-lucky {
-    position: absolute;
-    top: 81.6%;
-    left: 7.4%;
-    transform: translateY(-50%);
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-    color: #ffd9f0;
-    text-shadow: 0 1px 2px #42200f;
-    font: 400 clamp(12px, 3.6cqw, 23px)/1 'Courier Prime', monospace;
-  }
+.feeling-lucky {
+  position: absolute;
+  top: 78.23%;
+  left: 30%;
+  width: 41%;
+  height: 4.2%;
+  min-height: 44px;
+  transform: translateY(-50%) rotate(-1deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #080604;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 800 clamp(12px, 3.8cqw, 26px)/1 Inter, sans-serif;
+}
   .mobile-cabinet :focus-visible { outline: 2px solid #ffdcf4; outline-offset: 2px; }
 }
