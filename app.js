@@ -2,7 +2,7 @@
 const drawers=window.CABINET_DRAWERS;
 const container=document.querySelector('#drawers');
 const menu=document.querySelector('#navigation');
-const toggle=document.querySelector('#menu-toggle');
+const menuToggles = document.querySelectorAll('#menu-toggle, #mobile-menu-toggle');
 const states=[];
 function configureNewTab(link, drawer) {
  if (!drawer.newTab) return;
@@ -29,8 +29,18 @@ for(const [index,drawer] of drawers.entries()){
  button.addEventListener('click',()=>{if(drawer.newTab)return;if(drawer.url){location.href=drawer.url;return;}const wasPinned=state.pinned;clearAll();state.pinned=!wasPinned;state.render();});
 
 }
-toggle.addEventListener('click',()=>{clearAll();menu.showModal();document.documentElement.classList.add('menu-open');toggle.setAttribute('aria-expanded','true');});
-menu.addEventListener('close',()=>{document.documentElement.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');});
+for (const toggle of menuToggles) {
+  toggle.addEventListener('click', () => {
+    clearAll();
+    menu.showModal();
+    document.documentElement.classList.add('menu-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  });
+}
+menu.addEventListener('close', () => {
+  document.documentElement.classList.remove('menu-open');
+  for (const toggle of menuToggles) toggle.setAttribute('aria-expanded', 'false');
+});
 menu.querySelector('.dismiss').addEventListener('click',()=>menu.close());
 document.addEventListener('keydown',event=>{if(event.key==='Escape')clearAll();});
 // Real text links stay usable with keyboard and screen readers.
